@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>5d524616-641c-43db-8b63-d2c0812425d0.TABLE:postgres.public.department</OriginalElement>
+  <nodes>
+    <node x="142.6727073400037" y="576.0039661910222">5d524616-641c-43db-8b63-d2c0812425d0.TABLE:postgres.public.subject</node>
+    <node x="-37.60917356644914" y="445.0039661910222">5d524616-641c-43db-8b63-d2c0812425d0.TABLE:postgres.public.lecture</node>
+    <node x="-406.3324700365792" y="278.3101055727432">5d524616-641c-43db-8b63-d2c0812425d0.TABLE:postgres.public.sgroup</node>
+    <node x="-202.76875429508556" y="292.84438925132787">5d524616-641c-43db-8b63-d2c0812425d0.TABLE:postgres.public.department</node>
+    <node x="-208.08425692784388" y="74.59824016643091">5d524616-641c-43db-8b63-d2c0812425d0.TABLE:postgres.public.faculty</node>
+    <node x="179.23386173702877" y="240.74042504538738">5d524616-641c-43db-8b63-d2c0812425d0.TABLE:postgres.public.teacher</node>
+    <node x="-301.0346366475567" y="523.1733696863955">5d524616-641c-43db-8b63-d2c0812425d0.TABLE:postgres.public.room</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="5d524616-641c-43db-8b63-d2c0812425d0.TABLE:postgres.public.teacher" target="5d524616-641c-43db-8b63-d2c0812425d0.TABLE:postgres.public.teacher" relationship="REFERENCES">
+      <point x="0.0" y="115.5" />
+      <point x="264.23386173702875" y="489.2404250453874" />
+      <point x="366.73386173702875" y="489.2404250453874" />
+      <point x="366.73386173702875" y="356.2404250453874" />
+      <point x="85.0" y="0.0" />
+    </edge>
+    <edge source="5d524616-641c-43db-8b63-d2c0812425d0.TABLE:postgres.public.department" target="5d524616-641c-43db-8b63-d2c0812425d0.TABLE:postgres.public.faculty" relationship="REFERENCES">
+      <point x="-5.315502632758324" y="-82.5" />
+      <point x="0.0" y="71.5" />
+    </edge>
+    <edge source="5d524616-641c-43db-8b63-d2c0812425d0.TABLE:postgres.public.sgroup" target="5d524616-641c-43db-8b63-d2c0812425d0.TABLE:postgres.public.teacher" relationship="REFERENCES">
+      <point x="-14.999529963420798" y="-93.5" />
+      <point x="-350.832" y="57.09824016643091" />
+      <point x="279.23386173702875" y="57.09824016643091" />
+      <point x="15.0" y="-115.5" />
+    </edge>
+    <edge source="5d524616-641c-43db-8b63-d2c0812425d0.TABLE:postgres.public.lecture" target="5d524616-641c-43db-8b63-d2c0812425d0.TABLE:postgres.public.room" relationship="REFERENCES">
+      <point x="-64.5" y="45.66940349537333" />
+      <point x="61.0" y="0.0" />
+    </edge>
+    <edge source="5d524616-641c-43db-8b63-d2c0812425d0.TABLE:postgres.public.lecture" target="5d524616-641c-43db-8b63-d2c0812425d0.TABLE:postgres.public.sgroup" relationship="REFERENCES">
+      <point x="-64.5" y="-43.33059650462667" />
+      <point x="-335.8324700365792" y="505.6733696863955" />
+      <point x="0.0" y="93.5" />
+    </edge>
+    <edge source="5d524616-641c-43db-8b63-d2c0812425d0.TABLE:postgres.public.lecture" target="5d524616-641c-43db-8b63-d2c0812425d0.TABLE:postgres.public.subject" relationship="REFERENCES">
+      <point x="64.5" y="65.5" />
+      <point x="-64.0" y="0.0" />
+    </edge>
+    <edge source="5d524616-641c-43db-8b63-d2c0812425d0.TABLE:postgres.public.lecture" target="5d524616-641c-43db-8b63-d2c0812425d0.TABLE:postgres.public.teacher" relationship="REFERENCES">
+      <point x="64.5" y="-84.7635411456348" />
+      <point x="-84.99999999999997" y="108.0" />
+    </edge>
+    <edge source="5d524616-641c-43db-8b63-d2c0812425d0.TABLE:postgres.public.department" target="5d524616-641c-43db-8b63-d2c0812425d0.TABLE:postgres.public.teacher" relationship="REFERENCES">
+      <point x="64.5" y="-19.103964205940485" />
+      <point x="-84.99999999999997" y="0.0" />
+    </edge>
+    <edge source="5d524616-641c-43db-8b63-d2c0812425d0.TABLE:postgres.public.teacher" target="5d524616-641c-43db-8b63-d2c0812425d0.TABLE:postgres.public.department" relationship="REFERENCES">
+      <point x="-84.99999999999997" y="49.10357495461261" />
+      <point x="64.5" y="29.999610748672126" />
+    </edge>
+    <edge source="5d524616-641c-43db-8b63-d2c0812425d0.TABLE:postgres.public.faculty" target="5d524616-641c-43db-8b63-d2c0812425d0.TABLE:postgres.public.teacher" relationship="REFERENCES">
+      <point x="64.5" y="0.0" />
+      <point x="264.23386173702875" y="146.0982401664309" />
+      <point x="0.0" y="-115.5" />
+    </edge>
+    <edge source="5d524616-641c-43db-8b63-d2c0812425d0.TABLE:postgres.public.sgroup" target="5d524616-641c-43db-8b63-d2c0812425d0.TABLE:postgres.public.department" relationship="REFERENCES">
+      <point x="70.5" y="3.534283678584643" />
+      <point x="-64.5" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.6777777777777778" showDependencies="false" x="-10.0" y="365.37704918032784" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+
